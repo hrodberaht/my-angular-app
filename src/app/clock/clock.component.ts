@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
     styleUrls : ['./clock.component.css']
 })
 export class ClockComponent {
-    time = '12:43';
+    
+    time = new Date()  ;
+    
 }
