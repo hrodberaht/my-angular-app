@@ -1,5 +1,5 @@
 <h1>Products</h1>
 
-<button>Add product</button>
+<button class="btn btn-primary" [disabled]="!addProductAllowed" (click)="onAlert()">Add product</button>
 
 <app-product></app-product>
