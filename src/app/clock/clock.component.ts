@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ClockComponent {
     
-    time = new Date()  ;
+    time = this.time;
     
+    constructor(){
+    
+        setInterval(() => {
+            this.time = new Date() ;
+            
+        }, 1000)
+    }
 }
