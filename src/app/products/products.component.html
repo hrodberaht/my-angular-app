@@ -1,5 +1,11 @@
 <h1>Products</h1>
+<label>Product name</label>
+<input  type="text" 
+        class="form-control"
+        (input)="onUpdateProductName($event)"/>
 
 <button class="btn btn-primary" [disabled]="!addProductAllowed" (click)="onAlert()">Add product</button>
+
+<p>{{ productName }}</p>
 
 <app-product></app-product>

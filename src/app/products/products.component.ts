@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
     
     addProductAllowed = false;
+    productName = '';
     
     constructor() {
         setTimeout(() => {
@@ -16,6 +17,11 @@ export class ProductsComponent {
     
     onAlert(){
         alert("hello");
+    }
+    
+    onUpdateProductName(event) {
+       this.productName = event.target.value;
+       console.log(event);
     }
     
 } 
