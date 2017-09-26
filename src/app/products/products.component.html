@@ -3,9 +3,13 @@
 <input  type="text" 
         class="form-control"
         (input)="onUpdateProductName($event)"/>
+        
+<input  type="text" 
+        class="form-control"
+        [(ngModel)]="productName"/>
 
 <button class="btn btn-primary" [disabled]="!addProductAllowed" (click)="onAlert()">Add product</button>
 
-<p>{{ productName }}</p>
+<p>{{ productCreation }}</p>
 
 <app-product></app-product>

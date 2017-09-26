@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
     
     addProductAllowed = false;
+    productCreation = '';
     productName = '';
     
     constructor() {
@@ -16,7 +17,7 @@ export class ProductsComponent {
     }
     
     onAlert(){
-        alert("hello");
+        this.productCreation = this.productName;
     }
     
     onUpdateProductName(event) {
