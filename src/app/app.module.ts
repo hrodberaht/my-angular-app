@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import { ClockComponent } from './clock/clock.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
+import { RegistrationComponent} from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductComponent } from './product/product.component';
     ServersComponent,
     ClockComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

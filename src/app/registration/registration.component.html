@@ -1,0 +1,10 @@
+<label>Email adres</label>
+<input type="text"
+        [(ngModel)]="emailAdress"
+        (input)="emailEntered()"/>
+<br>
+<label>Password</label>
+<input type="text"/>
+<br>
+<button class="btn btn-primary" (click)="clearEmail()" [disabled]="!onEmailEnter">Register</button>
+
