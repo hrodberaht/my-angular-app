@@ -3,6 +3,7 @@
         [(ngModel)]="emailAdress"
         (input)="emailEntered()"/>
 <br>
+<p *ngIf="emailAdress !== '' && emailAdress !== 'email@gmail.com'">This isn't correct email</p>
 <label>Password</label>
 <input type="text"/>
 <br>
