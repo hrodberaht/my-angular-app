@@ -9,6 +9,7 @@ export class ProductsComponent {
     addProductAllowed = false;
     productCreation = '';
     productName = '';
+    products = ['Car','Doll'];
     
     constructor() {
         setTimeout(() => {
@@ -16,13 +17,11 @@ export class ProductsComponent {
         },4000)
     }
     
-    onAlert(){
-        this.productCreation = this.productName;
-    }
+   
     
-    onUpdateProductName(event) {
-       this.productName = event.target.value;
-       console.log(event);
+    addProduct() {
+       this.products.push(this.productName);
+       console.log(this.products);
     }
     
 } 
