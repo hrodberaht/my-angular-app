@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
     
     addProductAllowed = false;
+    showDetails = false;
     productCreation = '';
     productName = '';
     products = ['Car','Doll'];
+    logs = [];
     
     constructor() {
         setTimeout(() => {
@@ -17,11 +19,25 @@ export class ProductsComponent {
         },4000)
     }
     
-   
-    
     addProduct() {
+        
        this.products.push(this.productName);
        console.log(this.products);
+       
     }
+    
+    onDetails() {
+        
+       this.showDetails = !this.showDetails;
+        
+    }
+    
+    onLogs() {
+        
+        this.logs.push(new Date());
+        console.log(this.logs);
+    
+    }
+    
     
 } 
