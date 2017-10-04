@@ -13,7 +13,8 @@
 
 <p *ngIf="showDetails">Details</p>
 
-<p *ngFor="let log of logs">{{ log }}</p>
+<div *ngFor="let log of logs; let i = index"
+   [ngStyle]="{backgroundColor: i%2 === 0 ? 'lightgrey' : 'white'}">{{ i+1 }}. {{ log }}</div>
 
 
 <app-product *ngFor="let product of products"></app-product>
