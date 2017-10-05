@@ -8,23 +8,36 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
     
     addProductAllowed = false;
-    showDetails = false;
-    productCreation = '';
     productName = '';
+    
     products = ['Car','Doll'];
+    
+    showDetails = false;
+    
     logs = [];
     
+    
     constructor() {
-        setTimeout(() => {
-            this.addProductAllowed = true;
-        },4000)
+        
     }
     
     addProduct() {
         
        this.products.push(this.productName);
+       this.productName = '';
        console.log(this.products);
-       
+       this.addProductAllowed = false;
+    }
+    
+    checkProductName() {
+        
+        if(this.productName.length >= 3){
+            this.addProductAllowed = true;
+            
+        }else{
+            this.addProductAllowed = false;
+        }
+        
     }
     
     onDetails() {
