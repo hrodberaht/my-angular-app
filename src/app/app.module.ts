@@ -5,7 +5,7 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ClockComponent } from './clock/clock.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './products/product/product.component';
 import { RegistrationComponent} from './registration/registration.component';
 
 @NgModule({
