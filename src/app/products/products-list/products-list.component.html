@@ -6,16 +6,14 @@
         class="form-control"
         [(ngModel)]="productName"
         (input)="checkProductName()"/>
-
 <br>
 
 <button class="btn btn-primary" [disabled]="!addProductAllowed" (click)="addProduct()">Add product</button>
 <button class="btn btn-info" (click)="onDetails()" (click)="onLogs()">Details</button>
 
-<p *ngIf="showDetails">Details</p>
+<hr>
+
+<a href="#" *ngFor="let product of products"><p>{{ product }}</p></a>
 
 <div *ngFor="let log of logs; let i = index"
    [ngStyle]="{backgroundColor: i%2 === 0 ? 'lightgrey' : 'white'}">{{ i+1 }}. {{ log }}</div>
-
-
-<app-product *ngFor="let product of products" [nameOfProduct]="product"></app-product>
