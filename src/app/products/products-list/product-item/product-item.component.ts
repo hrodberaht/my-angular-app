@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-product',
-    templateUrl: 'product.component.html',
-    styleUrls: ['./product.component.css']
+    templateUrl: 'product-item.component.html',
+    styleUrls: ['./product-item.component.css']
 })
 
-export class ProductComponent {
+export class ProductItemComponent {
     
     @Input()
     nameOfProduct = 0;

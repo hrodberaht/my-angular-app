@@ -5,15 +5,18 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ClockComponent } from './clock/clock.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductComponent } from './products/product/product.component';
+import { ProductsListComponent } from './products/products-list/products-list.component';
+import { ProductItemComponent } from './products/products-list/product-item/product-item.component';
 import { RegistrationComponent} from './registration/registration.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ClockComponent,
     ProductsComponent,
-    ProductComponent,
+    ProductsListComponent,
+    ProductItemComponent,
     RegistrationComponent
   ],
   imports: [
