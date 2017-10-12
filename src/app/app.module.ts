@@ -7,7 +7,9 @@ import { ClockComponent } from './clock/clock.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductsListComponent } from './products/products-list/products-list.component';
 import { ProductItemComponent } from './products/products-list/product-item/product-item.component';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { RegistrationComponent} from './registration/registration.component';
+
 
 
 @NgModule({
@@ -17,6 +19,7 @@ import { RegistrationComponent} from './registration/registration.component';
     ProductsComponent,
     ProductsListComponent,
     ProductItemComponent,
+    ProductDetailComponent,
     RegistrationComponent
   ],
   imports: [

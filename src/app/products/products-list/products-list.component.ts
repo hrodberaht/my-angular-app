@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Product } from '../product.model';
+
 @Component({
     selector: 'app-products-list',
     templateUrl: './products-list.component.html',
@@ -10,9 +12,11 @@ export class ProductsListComponent {
     addProductAllowed = false;
     productName = '';
     
-    products = ['Car','Doll'];
+    products: Product[] = [
+        new Product('Peanat','OK',12.15 , 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzzYQWadS4OrcDrqaQB5i-rhMJs-bHS_PDnJcatG_mUwbSJnqO')
+        ];
     
-    showDetails = false;
+    showDetails = false;    
     
     logs = [];
     
@@ -21,13 +25,13 @@ export class ProductsListComponent {
         
     }
     
-    addProduct() {
+    // addProduct() {
         
-       this.products.push(this.productName);
-       this.productName = '';
-       console.log(this.products);
-       this.addProductAllowed = false;
-    }
+    //   this.products.push(this.productName);
+    //   this.productName = '';
+    //   console.log(this.products);
+    //   this.addProductAllowed = false;
+    // }
     
     checkProductName() {
         
