@@ -9,6 +9,7 @@ import { ProductsListComponent } from './products/products-list/products-list.co
 import { ProductItemComponent } from './products/products-list/product-item/product-item.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { RegistrationComponent} from './registration/registration.component';
+import { BasketComponet } from './basket/basket.component';
 
 
 
@@ -20,7 +21,8 @@ import { RegistrationComponent} from './registration/registration.component';
     ProductsListComponent,
     ProductItemComponent,
     ProductDetailComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    BasketComponet
   ],
   imports: [
     BrowserModule,
