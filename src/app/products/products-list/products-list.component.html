@@ -13,26 +13,7 @@
 
 <hr>
 
-<div class="col-xs-12">
-    <a 
-        href="#"
-        class="list-group-item clearfix"
-        *ngFor="let product of products">
-        <div>
-            <div class="row">
-                <div class="col-xs-4">
-                    {{ product.name }}
-                </div>
-                <div class="col-xs-4">
-                    {{ product.price }} zł
-                </div>
-                <div class="col-xs-4">
-                    <img src="{{ product.imgPath }}" alt="{{ product.name }}" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </a>
-</div>
+<app-product-item  *ngFor="let product of products" [prod]="product"></app-product-item>
 
 
 <div *ngFor="let log of logs; let i = index"

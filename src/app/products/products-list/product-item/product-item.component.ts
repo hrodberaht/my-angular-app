@@ -8,5 +8,7 @@ import { Component, Input } from '@angular/core';
 
 export class ProductItemComponent {
     
+   @Input('prod') product;
+   
    
 }
