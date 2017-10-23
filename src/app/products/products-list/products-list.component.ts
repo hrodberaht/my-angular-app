@@ -22,6 +22,11 @@ export class ProductsListComponent {
         
     }
     
+    handleAddProductEvent(name) {
+        this.products.push(new Product(name,'OK',12.15 , 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzzYQWadS4OrcDrqaQB5i-rhMJs-bHS_PDnJcatG_mUwbSJnqO'))
+        console.log(name);
+    }
+    
     onDetails() {
         
        this.showDetails = !this.showDetails;

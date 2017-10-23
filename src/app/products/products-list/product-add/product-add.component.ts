@@ -1,17 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'app-product-add',
     templateUrl: './product-add.component.html'
 })
 export class ProductAddComponent{
+    
+    @Output() addProductEvent = new EventEmitter();
      
     addProductAllowed = false;
     productName = '';
     productDescription = '';
     
+    constructor() {
+        
+    }
+    
     addProduct() {
-        alert(this.productDescription);
+        alert(this.productName);
+        this.addProductEvent.emit(this.productName);
+       
     }
     
     checkProduct() {
