@@ -26,12 +26,13 @@ export class ProductAddComponent{
         this.productPrice = 0;
         this.productDescription = '';
         this.productImgUrl = '';
+        this.addProductAllowed = false;
        
     }
     
     checkProduct() {
         
-        if(this.productName.length >= 3 && this.productPrice.toString().length >= 2){
+        if(this.productName.length >= 3 && this.productPrice > 0){
             this.addProductAllowed = true;
             
         }else{

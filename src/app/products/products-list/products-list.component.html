@@ -1,9 +1,3 @@
 <app-product-item  *ngFor="let product of products" [prod]="product"></app-product-item>
 
-
-<div *ngFor="let log of logs; let i = index"
-   [ngStyle]="{backgroundColor: i%2 === 0 ? 'lightgrey' : 'white'}">{{ i+1 }}. {{ log }}</div>
-   
-<hr>
-
 <app-product-add (addProductEvent)="handleAddProductEvent($event)"></app-product-add>
